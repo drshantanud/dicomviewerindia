@@ -104,3 +104,6 @@ p{margin:0 0 1em}
   .section{padding:56px 0}
   .plans,.gallery,.downloads,.form{grid-template-columns:1fr}
 }
+
+.video{position:relative;aspect-ratio:16/9;max-width:960px;margin:0 auto 12px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:#000}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
