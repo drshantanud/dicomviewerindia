@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DICOM Viewer for the cath lab</title>
+<meta name="description" content="An offline Windows DICOM viewer for the cath lab: local patient library, cine playback, QCA and bifurcation QCA, MP4 and PowerPoint export, backup, and CathOS cath-lab reporting.">
+<meta property="og:title" content="DICOM Viewer for the cath lab">
+<meta property="og:description" content="Offline Windows DICOM viewer with a local patient library, QCA, MP4 export and cath-lab reporting.">
+<meta property="og:image" content="images/viewer-qca.webp">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top"><img src="images/favicon.svg" alt="" width="28" height="28"> DICOM Viewer</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#screens">Screenshots</a>
+      <a href="#editions">Editions</a>
+      <a href="#download">Download</a>
+      <a class="btn btn-small" href="#contact">Get a licence</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Windows desktop · works fully offline</p>
+      <h1>Your cath-lab images, on your own PC.</h1>
+      <p class="lead">Import angiograms from CD, USB or folders into a local patient library. Play cine runs, measure, run QCA, and export to MP4 or PowerPoint in a few clicks. Patient data never leaves the computer.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#download">Download free demo</a>
+        <a class="btn btn-ghost" href="#editions">Compare editions</a>
+      </div>
+      <p class="fine">Windows 10 / 11, 64-bit. Demo: up to 15 cases, no key needed.</p>
+    </div>
+    <figure class="hero-shot">
+      <img src="images/viewer-qca.webp" width="1440" height="860" alt="Viewer showing a coronary run with a QCA analysis: minimum lumen diameter, reference diameter, percent stenosis and a diameter graph.">
+    </figure>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="wrap">
+    <h2>Everything you reach for after a case</h2>
+    <p class="section-lead">Built by a cardiologist for day-to-day cath-lab work, not for a radiology department.</p>
+    <div class="cards">
+      <article class="card">
+        <h3>Local patient library</h3>
+        <p>Import folders, CDs, DVDs or USB drives. Files are copied and indexed in a local database you can search by name, patient ID or accession. Open a CD without importing it.</p>
+      </article>
+      <article class="card">
+        <h3>Cine playback</h3>
+        <p>Runs play at their recorded frame rate. Window/level, zoom, pan, rotate, flip, bookmarks, full screen, and two projections side by side with linked cine.</p>
+      </article>
+      <article class="card">
+        <h3>Measurements and calibration</h3>
+        <p>Distance and angle tools. Calibrate on the catheter: its width is detected automatically and you only confirm the French size.</p>
+      </article>
+      <article class="card">
+        <h3>QCA and bifurcation QCA</h3>
+        <p>Drag or click along a vessel for MLD, reference diameter, % diameter and area stenosis, lesion length and a diameter graph. Edit edges and reference by hand, with live recalculation. Three-click bifurcation analysis for main vessel and side branch.</p>
+        <span class="tag">Full and CathOS editions</span>
+      </article>
+      <article class="card">
+        <h3>Export and share</h3>
+        <p>Save frames as PNG/JPG, export runs as MP4 (optionally anonymised), put selected runs into a PowerPoint with embedded video, or export a whole case to USB, CD/DVD or a folder.</p>
+      </article>
+      <article class="card">
+        <h3>Case types and reports</h3>
+        <p>Tag cases as CTO, bifurcation, left main, ROTA, IVL, IVUS, OCT and more, or add your own types. Attach Word, PDF or image reports to each patient.</p>
+      </article>
+      <article class="card">
+        <h3>Backup and restore</h3>
+        <p>Back up the whole library to an external drive or folder. Only new files are copied, every file is checked, and a restore never overwrites an existing library.</p>
+      </article>
+      <article class="card">
+        <h3>Private by design</h3>
+        <p>No cloud, no account, no internet needed. Images and reports stay in a folder on your PC, licensed per computer.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="research">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Research module</p>
+      <h2>Angio-based physiology workstation</h2>
+      <p>For researchers: automatic vessel segmentation, image-quality and overlap checks, and two-view 3D reconstruction of a coronary segment from the DICOM geometry, with every check shown alongside its value. Further steps toward an angiography-derived pressure ratio are in development.</p>
+      <div class="notice" role="note">
+        <strong>Research and educational use only.</strong> These tools are experimental. They are not a clinically validated measurement, not FFR, and must not be used to make treatment decisions.
+      </div>
+      <span class="tag">Full and CathOS editions</span>
+    </div>
+    <figure class="shot">
+      <img src="images/viewer-cine.webp" width="1280" height="820" loading="lazy" alt="Cath-lab workstation layout with run thumbnails, the image in the centre and the analysis panel on the right.">
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="cathos">
+  <div class="wrap split split-rev">
+    <figure class="shot">
+      <img src="images/cathos-angiography.webp" width="1360" height="900" loading="lazy" alt="CathOS procedure page with coronary dominance and lesions recorded per vessel.">
+    </figure>
+    <div>
+      <p class="eyebrow">CathOS edition</p>
+      <h2>Cath-lab reporting, built in</h2>
+      <p>CathOS adds structured documentation and reports to the viewer, running on the same PC and still fully offline.</p>
+      <ul class="ticks">
+        <li>Patients with their own CathOS ID, linked to the viewer's studies</li>
+        <li>Angiography findings and lesions per vessel; start a PCI from a finalised angiogram</li>
+        <li>Device and medication libraries, with a starter list of common devices</li>
+        <li>Conclusion and recommendation sections; download the report as PDF or print it</li>
+        <li>User accounts, roles and an audit history</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="screens">
+  <div class="wrap">
+    <h2>Screenshots</h2>
+    <div class="gallery">
+      <figure><a href="images/patient-library.webp"><img src="images/patient-library.webp" width="1280" height="760" loading="lazy" alt="Patient library with patients, studies and series lists."></a><figcaption>Patient library</figcaption></figure>
+      <figure><a href="images/viewer-qca.webp"><img src="images/viewer-qca.webp" width="1440" height="860" loading="lazy" alt="QCA result on a coronary segment."></a><figcaption>QCA with diameter graph</figcaption></figure>
+      <figure><a href="images/measurements.webp"><img src="images/measurements.webp" width="1280" height="820" loading="lazy" alt="Distance and angle measurements on an angiogram."></a><figcaption>Measurements</figcaption></figure>
+      <figure><a href="images/cathos-dashboard.webp"><img src="images/cathos-dashboard.webp" width="1360" height="860" loading="lazy" alt="CathOS dashboard."></a><figcaption>CathOS dashboard</figcaption></figure>
+      <figure><a href="images/cathos-devices.webp"><img src="images/cathos-devices.webp" width="1360" height="900" loading="lazy" alt="CathOS device library."></a><figcaption>CathOS device library</figcaption></figure>
+      <figure><a href="images/cathos-report.webp"><img src="images/cathos-report.webp" width="1600" height="894" loading="lazy" alt="CathOS report with PDF download and print."></a><figcaption>CathOS report, PDF and print</figcaption></figure>
+    </div>
+    <p class="fine center">Screenshots show synthetic test patients.</p>
+  </div>
+</section>
+
+<section class="section" id="editions">
+  <div class="wrap">
+    <h2>Choose your edition</h2>
+    <p class="section-lead">One licence key per PC. Every edition keeps the same patient library, so you can move up later without re-importing.</p>
+    <div class="plans">
+      <article class="plan">
+        <h3>Basic</h3>
+        <p class="price" data-price="basic">Contact for pricing</p>
+        <p class="plan-for">Viewing, measuring and sharing.</p>
+        <ul class="ticks">
+          <li>Patient library, CD/USB import</li>
+          <li>Cine playback and display tools</li>
+          <li>Distance, angle, catheter calibration</li>
+          <li>Image, MP4, PowerPoint and case export</li>
+          <li>Case types, attached reports</li>
+          <li>Backup and restore</li>
+        </ul>
+      </article>
+      <article class="plan plan-featured">
+        <p class="badge">Recommended</p>
+        <h3>Full</h3>
+        <p class="price" data-price="full">Contact for pricing</p>
+        <p class="plan-for">Everything in Basic, plus analysis.</p>
+        <ul class="ticks">
+          <li>QCA with edge and reference editing</li>
+          <li>Bifurcation QCA</li>
+          <li>Automatic vessel detection</li>
+          <li>Research module: two-view 3D reconstruction<sup>*</sup></li>
+        </ul>
+      </article>
+      <article class="plan">
+        <h3>CathOS</h3>
+        <p class="price" data-price="cathos">Contact for pricing</p>
+        <p class="plan-for">Everything in Full, plus reporting.</p>
+        <ul class="ticks">
+          <li>CathOS cath-lab documentation</li>
+          <li>Angiography and PCI records</li>
+          <li>Device and medication libraries</li>
+          <li>PDF and printed reports</li>
+          <li>CathOS data included in backups</li>
+        </ul>
+      </article>
+    </div>
+    <p class="fine center"><sup>*</sup>Research and educational use only.</p>
+  </div>
+</section>
+
+<section class="section section-alt" id="download">
+  <div class="wrap">
+    <h2>Download</h2>
+    <p class="section-lead">Try the demo first: the full program, limited to 15 cases. After buying, you install the edition you licensed and paste in your key.</p>
+    <div class="downloads">
+      <article class="dl">
+        <h3>Free demo</h3>
+        <p>Up to 15 cases. No key needed.</p>
+        <a class="btn" data-download="demo" href="#contact">Download demo</a>
+      </article>
+      <article class="dl">
+        <h3>Basic</h3>
+        <p>Needs a licence key.</p>
+        <a class="btn btn-ghost" data-download="basic" href="#contact">Download Basic</a>
+      </article>
+      <article class="dl">
+        <h3>Full</h3>
+        <p>Needs a licence key.</p>
+        <a class="btn btn-ghost" data-download="full" href="#contact">Download Full</a>
+      </article>
+      <article class="dl">
+        <h3>CathOS edition</h3>
+        <p>Needs a licence key.</p>
+        <a class="btn btn-ghost" data-download="cathos" href="#contact">Download CathOS</a>
+      </article>
+    </div>
+
+    <div class="steps">
+      <h3>How licensing works</h3>
+      <ol>
+        <li><strong>Install</strong> your edition. On first start it shows <em>This PC's ID</em>, with a Copy button.</li>
+        <li><strong>Send us the PC ID</strong> with the form below.</li>
+        <li><strong>Paste the licence key</strong> you receive (or open the .lic file) and click Activate.</li>
+      </ol>
+      <p class="fine">Windows may show a SmartScreen warning for a new installer: choose <em>More info</em>, then <em>Run anyway</em>. Your patient library stays on the PC when you uninstall or upgrade.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap contact">
+    <div>
+      <h2>Get a licence or ask a question</h2>
+      <p>Tell us which edition you want and paste your PC ID if you already have it. We will reply with pricing and your licence key.</p>
+    </div>
+    <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="company-website" class="form">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hp"><label>Leave this empty <input name="company-website"></label></p>
+      <label>Name <input name="name" required autocomplete="name"></label>
+      <label>Hospital or clinic <input name="hospital" autocomplete="organization"></label>
+      <label>Email <input type="email" name="email" required autocomplete="email"></label>
+      <label>Phone (optional) <input type="tel" name="phone" autocomplete="tel"></label>
+      <label>Edition
+        <select name="edition">
+          <option>Demo / just asking</option>
+          <option>Basic</option>
+          <option selected>Full</option>
+          <option>CathOS</option>
+        </select>
+      </label>
+      <label>PC ID (optional) <input name="pc_id" placeholder="1A2B-3C4D-5E6F-7A8B" autocomplete="off"></label>
+      <label class="full">Message <textarea name="message" rows="4"></textarea></label>
+      <button class="btn full" type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>DICOM Viewer</strong>, created by Dr. Shantanu Deshpande.</p>
+    <p class="fine">Measurements and QCA are image-processing estimates on 2-D projections and must be verified clinically. The research module is for research and educational use only. Windows is a trademark of Microsoft Corporation.</p>
+    <p class="fine">&copy; <span id="year">2026</span> Dr. Shantanu Deshpande. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="downloads.js"></script>
+</body>
+</html>
