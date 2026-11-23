@@ -1,21 +1,23 @@
 // Download links. Paste each installer's public URL between the quotes.
 // While a link is empty, its button goes to the contact form instead.
+// The version shown under each button is read from the file name.
+var BASE = "https://github.com/drshantanud/dicomviewer-downloads/releases/download/v0.1.0.58/";
 var DOWNLOADS = {
-  demo:   "",  // DicomViewer-Demo-Setup-<version>.exe
-  basic:  "https://github.com/drshantanud/dicomviewer-downloads/releases/download/v0.1.0.58/DicomViewer-Basic-Setup-0.1.0.58.exe",  // DicomViewer-Basic-Setup-<version>.exe
-  full:   "https://github.com/drshantanud/dicomviewer-downloads/releases/download/v0.1.0.58/DicomViewer-Setup-0.1.0.58.exe",  // DicomViewer-Setup-<version>.exe
+  demo:   BASE + "DicomViewer-Demo-Setup-0.1.0.61.exe",
+  basic:  BASE + "DicomViewer-Basic-Setup-0.1.0.58.exe",
+  full:   BASE + "DicomViewer-Setup-0.1.0.58.exe",
   cathos: ""   // DicomViewer-CathOS-Setup-<version>.exe
 };
-var VERSION = "0.1.0.58";  // e.g. "0.1.0.58", shown under the buttons when set
 
 document.querySelectorAll("[data-download]").forEach(function (a) {
   var url = DOWNLOADS[a.getAttribute("data-download")];
   if (url) {
     a.href = url;
-    if (VERSION) {
+    var v = url.match(/-(\d+(?:\.\d+)+)\.exe$/);
+    if (v) {
       var m = document.createElement("span");
       m.className = "meta";
-      m.textContent = "Version " + VERSION;
+      m.textContent = "Version " + v[1];
       a.insertAdjacentElement("afterend", m);
     }
   } else {
